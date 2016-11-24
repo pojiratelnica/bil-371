@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Форма</title>
+   </head>
+
+<body>
+
+<form action="post.php" method="post">
+	Имя: <input type="text" name="name"><br>
+	E-mail: <input type="text" name="email"><br><br>
+	Биография:  <textarea name="bio" rows="3" cols="40"></textarea><br>
+	<br>
+	Пол:<br>
+	
+	  <input type="radio" name="gender" value="male" checked> Мужчина<br>
+	  <input type="radio" name="gender" value="female"> Женщина<br>
+	  <input type="radio" name="gender" value="okama"> Окама
+	
+	<br>
+	Хобби:<br>
+	
+	  <input type="checkbox" name="cat1" value="student"> Студент<br>
+	  <input type="checkbox" name="cat2" value="draw"> Рисование<br>
+	  <input type="checkbox" name="cat3" value="read"> Чтение
+	
+	<br>
+	В какую страну хотите:<br>
+	<select name="country">
+	    <option value="usa">Америка</option>
+	    <option value="japan">Япония</option>
+	    <option value="korea">Корея</option>
+	  </select>
+	<br><br>
+	Выбрать категорию:<br>
+
+	<select name="genre[]" multiple="multiple">
+	  <option value="slash">Слэш(яой)</option>
+	  <option value="drama">Драма</option>
+	  <option value="yuri">Юри</option>
+	  <option value="soulmates">Соулмейты</option>
+	</select>
+
+	<br><br>
+	<input type="submit" >
+</form>
+
+</body>
+</html> 
